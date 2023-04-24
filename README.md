@@ -1,4 +1,4 @@
-# Azure DevOps Zero To Hero Tutorial
+# Build CI and CD Pipeline using Azure DevOps - Step by Step
 
 **Azure DevOps** supports a collaborative culture and set of processes that bring together developers, project managers, and contributors to develop software. It allows organizations to create and improve products at a faster pace than they can with traditional software development approaches.
 
