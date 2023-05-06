@@ -95,12 +95,35 @@ You have now access to the artifact produced by the pipeline :
 The content of that zip file is exactly the same the one in the /out folder.
 
 
-## Build CI pipeline on Azure devops
+## Build CD pipeline on Azure devops
 
-- Step 1 : go into the **Azure Portal** and create a **Web App**
+- Step 1 : go into the **Azure Portal** and create **Web App** for **dev**, **uat** and **prod** :
 
 <img src="/pictures/web_app.png" title="web app"  width="900">
+
+For the **prod** web app, add a deployement slot **staging** :
+
+<img src="/pictures/staging.png" title="deployment slot staging"  width="900">
+
+On the configuration of slot **staging**, set Swap enabled :
+
+<img src="/pictures/swap_enabled.png" title="swap enabled"  width="900">
 
 - Step 2 : go into the **Project Settings** of **Azure Devops** and create a **Service Connection**. Choose **Resource manager** :
 
 <img src="/pictures/service_connection.png" title="service connection"  width="900">
+
+- Step 3 : Create a **release Pipeline**. Choose an empty job.
+
+<img src="/pictures/release_pipeline.png" title="release pipeline"  width="900">
+
+Add artifact :
+<img src="/pictures/add_artifact.png" title="add artifact"  width="900">
+
+Add **App Service Deploy** :
+<img src="/pictures/app_service_deploy.png" title="app service deploy"  width="900">
+
+Problem : Missing rights to create the connection !!!!
+
+Clone stage **dev** and create stage **uat** as well as **prod** :
+<img src="/pictures/stages.png" title="stage uat and prod"  width="900">
