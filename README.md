@@ -56,11 +56,18 @@ git push -u originazure --all
 
 - Step 2 : create a classic pipeline 
 <img src="/pictures/classic_pipeline.png" title="classic pipeline"  width="900">
-
-- Step 3 : empty job 
 <img src="/pictures/empty_job.png" title="empty job"  width="900">
+<img src="/pictures/dotnet_core.png" title="choose dotnet core"  width="900">
+<img src="/pictures/tasks.png" title="add tasks"  width="900">
 
+- Step 3 : add configuration and variable
 
+    - add parameters : --configuration $(BuildConfiguration)
+    <img src="/pictures/configuration.png" title="configuration"  width="900">
 
+    - add a variable BuildConfiguration = Release
+    <img src="/pictures/release.png" title="release"  width="900">
 
-IvEGX0j4xw8
+    - add parameters (built-in variable, you don't have to declare it) : --output $(Build.ArtifactStagingDirectory)
+    <img src="/pictures/output.png" title="output"  width="900">
+
