@@ -136,3 +136,7 @@ Add a **swap slot** task to prod found under **App Service Manage** :
 
 Add approval conditions :
 <img src="/pictures/approval.png" title="approval"  width="900">
+
+Create a release :
+<img src="/pictures/create_release.png" title="create release"  width="900">
+
