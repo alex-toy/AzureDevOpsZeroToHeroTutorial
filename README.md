@@ -84,3 +84,10 @@ In case you have an issue on step dotnet restore, you may need to add a task for
 
 <img src="/pictures/use_dotnet.png" title="use dotnet"  width="900">
 <img src="/pictures/use_dotnet2.png" title="use dotnet"  width="900">
+
+You have now access to the artifact produced by the pipeline :
+
+<img src="/pictures/artifact.png" title="artifact"  width="900">
+<img src="/pictures/artifact1.png" title="artifact"  width="900">
+
+The content of that zip file is exactly the same the one in the /out folder.
