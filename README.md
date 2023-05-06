@@ -9,7 +9,7 @@ Continuous Integration(CI) is an automated process that allows any code changes 
 **Basic Rule** : never do anything on **Azure devops**, unless you know how to do it manually!!
 
 
-## Build steps
+## Manual Build steps
 
 - Step 1 : bring in the necessary packages
 ```
@@ -41,6 +41,25 @@ Now the files necessary for deployment can be found in the source folder. You ca
 dotnet C:\source\out\HelloWorldApp.dll
 ```
 <img src="/pictures/dotnet_execute.png" title="dotnet execute dll"  width="900">
+
+and the app is again listening on port 5000.
+
+
+## Build pipeline on Azure devops
+
+- Step 1 : add Azure Devops as repo
+```
+git remote add originazure https://alexviseo@dev.azure.com/alexviseo/HelloWorldApp/_git/HelloWorldApp
+git push -u originazure --all
+```
+<img src="/pictures/add_repo.png" title="add azure devops as origin for repos"  width="900">
+
+- Step 2 : create a classic pipeline 
+<img src="/pictures/classic_pipeline.png" title="classic pipeline"  width="900">
+
+- Step 3 : empty job 
+<img src="/pictures/empty_job.png" title="empty job"  width="900">
+
 
 
 
