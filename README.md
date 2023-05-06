@@ -80,3 +80,7 @@ git push -u originazure --all
 <img src="/pictures/save_and_queue.png" title="save and queue"  width="900">
 <img src="/pictures/save_and_queue2.png" title="save and queue"  width="900">
 
+In case you have an issue on step dotnet restore, you may need to add a task for installing .NET 6 at the top of the pipeline :
+
+<img src="/pictures/use_dotnet.png" title="use dotnet"  width="900">
+<img src="/pictures/use_dotnet2.png" title="use dotnet"  width="900">
