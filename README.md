@@ -71,3 +71,12 @@ git push -u originazure --all
     - add parameters (built-in variable, you don't have to declare it) : --output $(Build.ArtifactStagingDirectory)
     <img src="/pictures/output.png" title="output"  width="900">
 
+- Step 4 : add a **publish Artifact** task
+
+<img src="/pictures/publish_artifact.png" title="publish artifact"  width="900">
+
+- Step 5 : save and queue
+
+<img src="/pictures/save_and_queue.png" title="save and queue"  width="900">
+<img src="/pictures/save_and_queue2.png" title="save and queue"  width="900">
+
