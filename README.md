@@ -13,13 +13,20 @@ Continuous Integration(CI) is an automated process that allows any code changes 
 ```
 dotnet restore HelloWorldApp.csproj --interactive
 ```
-<img src="/pictures/dotnet_restore_authentication.png" title="dotnet restore authentication"  width="800">
+<img src="/pictures/dotnet_restore_authentication.png" title="dotnet restore authentication"  width="900">
 
 - Step 2 : will produce binaries on the local machine that can be used for testing.
 ```
 dotnet build HelloWorldApp.csproj --configuration Realease --interactive
 ```
-<img src="/pictures/dotnet_build.png" title="dotnet build"  width="800">
+<img src="/pictures/dotnet_build.png" title="dotnet build"  width="900">
+
+The project can now be launched locally :
+```
+dotnet C:\path\to\HelloWorldApp\HelloWorldApp\bin\Realease\net6.0\HelloWorldApp.dll
+```
+<img src="/pictures/dotnet_local.png" title="dotnet launched locally"  width="900">
+<img src="/pictures/dotnet_local2.png" title="dotnet launched locally"  width="900">
 
 - Step 3
 ```
