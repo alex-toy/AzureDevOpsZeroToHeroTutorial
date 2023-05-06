@@ -127,3 +127,12 @@ Problem : Missing rights to create the connection !!!!
 
 Clone stage **dev** and create stage **uat** as well as **prod** :
 <img src="/pictures/stages.png" title="stage uat and prod"  width="900">
+
+In prod, choose **Deploy to Slot or App Service Environment** and add staging :
+<img src="/pictures/deploy_slot.png" title="deploy slot"  width="900">
+
+Add a **swap slot** task to prod found under **App Service Manage** :
+<img src="/pictures/swap_slot.png" title="swap slot"  width="900">
+
+Add approval conditions :
+<img src="/pictures/approval.png" title="approval"  width="900">
