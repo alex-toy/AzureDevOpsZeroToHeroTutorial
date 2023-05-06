@@ -6,6 +6,8 @@ Continuous integration/continuous delivery (CI/CD) pipelines will improve softwa
 
 Continuous Integration(CI) is an automated process that allows any code changes in code to an application to be regularly developed, tested, and merged to a shared repository. Continuous Delivery(CD) represents the deployment of artifacts into the production environment. This will automatically test the bug and upload it to a repository.
 
+<img src="/pictures/all_steps.png" title="all steps"  width="900">
+
 **Basic Rule** : never do anything on **Azure devops**, unless you know how to do it manually!!
 
 
@@ -45,7 +47,7 @@ dotnet C:\source\out\HelloWorldApp.dll
 and the app is again listening on port 5000.
 
 
-## Build pipeline on Azure devops
+## Build CI pipeline on Azure devops
 
 - Step 1 : add Azure Devops as repo
 ```
@@ -87,7 +89,18 @@ In case you have an issue on step dotnet restore, you may need to add a task for
 
 You have now access to the artifact produced by the pipeline :
 
-<img src="/pictures/artifact.png" title="artifact"  width="900">
+<img src="/pictures/artifact.png" title="artifact"  width="400">
 <img src="/pictures/artifact1.png" title="artifact"  width="900">
 
 The content of that zip file is exactly the same the one in the /out folder.
+
+
+## Build CI pipeline on Azure devops
+
+- Step 1 : go into the **Azure Portal** and create a **Web App**
+
+<img src="/pictures/web_app.png" title="web app"  width="900">
+
+- Step 2 : go into the **Project Settings** of **Azure Devops** and create a **Service Connection**. Choose **Resource manager** :
+
+<img src="/pictures/service_connection.png" title="service connection"  width="900">
